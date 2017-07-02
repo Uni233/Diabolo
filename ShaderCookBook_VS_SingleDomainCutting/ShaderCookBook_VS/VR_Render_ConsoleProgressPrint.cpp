@@ -1,0 +1,34 @@
+#include "VR_Render_ConsoleProgressPrint.h"
+
+namespace YC
+{
+	namespace Render
+	{
+		void progressBar( char label[], int step, int total )
+		{
+			//progress width
+			const int pwidth = 72;
+
+			//minus label len
+			int width = pwidth - strlen( label );
+			int pos = ( step * width ) / total ;
+
+
+			int percent = ( step * 100 ) / total;
+
+			//set green text color, only on Windows
+			SetConsoleTextAttribute(  GetStdHandle( STD_OUTPUT_HANDLE ), FOREGROUND_GREEN );
+			printf( "%s[", label );
+
+			//fill progress bar with =
+			for ( int i = 0; i < pos; i++ )  printf( "%c", '=' );
+
+			//fill progress bar with spaces
+			printf( "% *c", width - pos + 1, ']' );
+			printf( " %3d%%\r", percent );
+
+			//reset text color, only on Windows
+			SetConsoleTextAttribute(  GetStdHandle( STD_OUTPUT_HANDLE ), 0x08 );
+		}
+	}
+}//namespace YC

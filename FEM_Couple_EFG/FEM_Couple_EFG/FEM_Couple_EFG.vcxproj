@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D43D2144-465D-4E2A-83FF-AE2CDE522A30}</ProjectGuid>
+    <RootNamespace>FEM_Couple_EFG</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 5.5.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\0.SDK;D:\workspace\0.SDK\xerces\include;C:\CUDASDK_4_2_9_win32\shared\inc;C:\CUDASDK_4_2_9_win32\C\common\inc;D:\workspace\Tmp\MultiDomainBlending\Belytscho\nouse2\FEM_Couple_EFG\SDK;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\0.SDK;h:\workspace\2.SDK\SOIL;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\common\inc;D:\workspace\0.SDK\xerces\include;$(SolutionDir)\SDK;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\workspace\0.SDK\xerces\lib;C:\CUDASDK_4_2_9_win32\C\common\lib\Win32;E:\qt-everywhere-opensource-src-4.8.3\lib;D:\workspace\0.SDK\SofaDependence\lib\win32\ReleaseVC9;D:\workspace\0.SDK\STLport-5.2.1\lib;D:\workspace\0.SDK\GL\Lib;D:\workspace\0.SDK\boost_1_46_1\stage\lib;D:\workspace\0.SDK\ogre-v1-6-5-vc80-MultiThread\ogre\lib;$(SolutionDir)\SDK;$(VCInstallDir)PlatformSDK\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\workspace\0.SDK\xerces\lib;D:\workspace\0.SDK\STLport-5.2.1\lib;D:\workspace\0.SDK\GL\Lib;D:\workspace\0.SDK\boost_1_46_1\stage\lib;h:\workspace\2.SDK\SOIL;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\common\lib\Win32;$(SolutionDir)\SDK;$(VCInstallDir)PlatformSDK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew32.lib;xerces-c_3.lib;cudart.lib;cutil32.lib;SOIL.lib;cuda.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>glew32.lib;xerces-c_3.lib;cudart.lib;SOIL.lib;cuda.lib;glu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+      <Include>H:\workspace\2.SDK;%(Include)</Include>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BlasOperator.cpp" />
+    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="CG\preconditionrelaxation.cpp" />
+    <ClCompile Include="CG\preconditionssor.cpp" />
+    <ClCompile Include="CG\solver.cpp" />
+    <ClCompile Include="CG\solvercg.cpp" />
+    <ClCompile Include="CG\solvercontrol.cpp" />
+    <ClCompile Include="Configure\ini.cpp" />
+    <ClCompile Include="Configure\INIReader.cpp" />
+    <ClCompile Include="Configure\INIReaderTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="datacache.cpp" />
+    <ClCompile Include="Delaunay\Delaunay.cpp" />
+    <ClCompile Include="distributing.cpp" />
+    <ClCompile Include="ElasticSimulation_Couple.cpp" />
+    <ClCompile Include="Frame\Axis_YC.cpp" />
+    <ClCompile Include="Frame\Quater_YC.cpp" />
+    <ClCompile Include="globalrowsfromlocal.cpp" />
+    <ClCompile Include="LookUp.cpp" />
+    <ClCompile Include="Maths\COLOR.cpp" />
+    <ClCompile Include="constant_numbers.cpp" />
+    <ClCompile Include="FEM_Couple_EFG.cpp" />
+    <ClCompile Include="Maths\MATRIX4X4.cpp" />
+    <ClCompile Include="MeshGenerate.cpp" />
+    <ClCompile Include="Maths\PLANE.cpp" />
+    <ClCompile Include="MeshGenerate_Cuda.cpp" />
+    <ClCompile Include="MeshGenerate_FEM.cpp" />
+    <ClCompile Include="MeshGenerate_MeshCutting.cpp" />
+    <ClCompile Include="MeshParser_Obj\objParser.cpp" />
+    <ClCompile Include="Polynomial.cpp" />
+    <ClCompile Include="preconditionrelaxation.cpp" />
+    <ClCompile Include="preconditionssor.cpp" />
+    <ClCompile Include="solver.cpp" />
+    <ClCompile Include="solvercg.cpp" />
+    <ClCompile Include="solvercontrol.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Maths\VECTOR2D.cpp" />
+    <ClCompile Include="Maths\VECTOR3D.cpp" />
+    <ClCompile Include="Maths\VECTOR4D.cpp" />
+    <ClCompile Include="steak_data.cpp" />
+    <ClCompile Include="vbo_function.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="VR_Global_Define.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlasOperator.h" />
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="CellStructOnCuda.h" />
+    <ClInclude Include="CellToTriangleMeshVertice.h" />
+    <ClInclude Include="CG\preconditionrelaxation.h" />
+    <ClInclude Include="CG\preconditionssor.h" />
+    <ClInclude Include="CG\solver.h" />
+    <ClInclude Include="CG\solvercg.h" />
+    <ClInclude Include="CG\solvercontrol.h" />
+    <ClInclude Include="Configure\ini.h" />
+    <ClInclude Include="Configure\INIReader.h" />
+    <ClInclude Include="datacache.h" />
+    <ClInclude Include="Delaunay\Delaunay.h" />
+    <ClInclude Include="distributing.h" />
+    <ClInclude Include="ElasticSimulation.h" />
+    <ClInclude Include="ElasticSimulation_Couple.h" />
+    <ClInclude Include="ForceCoupleNode.h" />
+    <ClInclude Include="Frame\Axis_YC.h" />
+    <ClInclude Include="Frame\Mat_YC.h" />
+    <ClInclude Include="Frame\Quater_YC.h" />
+    <ClInclude Include="Frame\Vec_YC.h" />
+    <ClInclude Include="globalrowsfromlocal.h" />
+    <ClInclude Include="Maths\COLOR.h" />
+    <ClInclude Include="constant_numbers.h" />
+    <ClInclude Include="FEM_Shape_Gradient_Gauss.h" />
+    <ClInclude Include="Maths\Maths.h" />
+    <ClInclude Include="Maths\MATRIX4X4.h" />
+    <ClInclude Include="MeshCuttingStructure.h" />
+    <ClInclude Include="MeshCuttingStructureOnCuda.h" />
+    <ClInclude Include="MeshGenerate.h" />
+    <ClInclude Include="MeshParser_Obj\MeshParser.h" />
+    <ClInclude Include="MeshParser_Obj\objParser.h" />
+    <ClInclude Include="plane.h" />
+    <ClInclude Include="Maths\PLANE.h" />
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="preconditionrelaxation.h" />
+    <ClInclude Include="preconditionssor.h" />
+    <ClInclude Include="Simulation.h" />
+    <ClInclude Include="solver.h" />
+    <ClInclude Include="solvercg.h" />
+    <ClInclude Include="solvercontrol.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Maths\VECTOR2D.h" />
+    <ClInclude Include="Maths\VECTOR3D.h" />
+    <ClInclude Include="Maths\VECTOR4D.h" />
+    <ClInclude Include="triangleMeshStruct.h" />
+    <ClInclude Include="TripletNode.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VR_Global_Define.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="CUDA\cuPrintf.cu">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <None Include="CUDA\cuPrintf.cuh" />
+    <CudaCompile Include="CUDA\kernelVBO.cu">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\ousp_cg.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="CUDA\simplePrintf.cu">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CudaCompile>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 5.5.targets" />
+  </ImportGroup>
+</Project>

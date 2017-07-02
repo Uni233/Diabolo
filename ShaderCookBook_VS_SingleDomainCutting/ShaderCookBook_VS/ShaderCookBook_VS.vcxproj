@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42E0DEE5-CA1A-4E56-AD67-044C5F062FDF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ShaderCookBook_VS</RootNamespace>
+    <ProjectName>NouseProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 6.5.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glm;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glload\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\freeglut\include;C:\NVIDIA\CUDA\CUDASamples\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include;D:\workspace\0.SDK;D:\MyWorkSpace2014\MyPaper\GLSL\ShaderCookBook_VS\ingredients;D:\workspace\0.SDK\SOIL;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glutil\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glmesh\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\boost;D:\MyWorkSpace2014\MyPaper\GLSL\ShaderCookBook_VS\ShaderCookBook_VS;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkSpace2014\SDK\MyOpenGL\lib\Release;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glload\lib;C:\NVIDIA\CUDA\CUDAToolkit\lib\Win32;D:\workspace\0.SDK\SOIL;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glutil\lib;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glmesh\lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glm;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glload\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\freeglut\include;C:\NVIDIA\CUDA\CUDASamples\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include;D:\workspace\0.SDK;D:\MyWorkSpace2014\MyPaper\GLSL\ShaderCookBook_VS\ingredients;D:\workspace\0.SDK\SOIL;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glutil\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glmesh\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\boost;D:\MyWorkSpace2014\MyPaper\GLSL\ShaderCookBook_VS\ShaderCookBook_VS;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkSpace2014\SDK\MyOpenGL\lib\Release;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glload\lib;C:\NVIDIA\CUDA\CUDAToolkit\lib\Win32;D:\workspace\0.SDK\SOIL;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glutil\lib;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glmesh\lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glm;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glload\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\freeglut\include;C:\NVIDIA\CUDA\CUDASamples\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;D:\workspace\0.SDK;D:\MyWorkSpace2014\MyPaper\GLSL\ShaderCookBook_VS\ingredients;D:\workspace\0.SDK\SOIL;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glutil\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glmesh\include;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\boost;D:\MyWorkSpace2014\MyPaper\GLSL\ShaderCookBook_VS\ShaderCookBook_VS;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkSpace2014\SDK\MyOpenGL\lib\Release;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glload\lib;C:\NVIDIA\CUDA\CUDAToolkit\lib\Win32;D:\workspace\0.SDK\SOIL;D:\workspace\0.SDK\boost_1_46_1\stage\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\Win32;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glutil\lib;D:\MyWorkSpace2014\SDK\glsdk_0_5_2\glmesh\lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\MyWorkspace\SDKx64\freeglut-2.8.1\include;D:\MyWorkspace\SDKx64\glsdk_0_5_2\glm;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\glload\include;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\freeglut\include;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;D:\MyWorkSpace\MyPaper\GLSL\ShaderCookBook_VS\ingredients;D:\MyWorkSpace\SDKx64\SOIL;D:\MyWorkSpace\SDKx64;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\glutil\include;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\glmesh\include;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\boost;D:\MyWorkSpace\MyPaper\GLSL\ShaderCookBook_VS\ShaderCookBook_VS;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;D:\MyWorkSpace\SDKx64\cusplibrary-0.4.0;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx64\freeglut-2.8.1\lib\x64;D:\MyWorkspace\SDKx64\glsdk_0_5_2\freeglut\lib;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\glload\lib;C:\NVIDIA\CUDA\CUDAToolkit\lib\x64;D:\MyWorkSpace\SDKx64\SOIL;D:\MyWorkSpace\SDKx64\boost_1_54_0\lib64-msvc-10.0;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\glutil\lib;D:\MyWorkSpace\SDKx64\glsdk_0_5_2\glmesh\lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glloadD.lib;cudart.lib;SOIL.lib;cuda.lib;glutilD.lib;glmeshD.lib;nvToolsExt32_1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_20,sm_20</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glloadD.lib;cudart.lib;SOIL.lib;cuda.lib;glutilD.lib;glmeshD.lib;nvToolsExt32_1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_20,sm_20</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glload.lib;cudart.lib;SOIL.lib;cuda.lib;glutil.lib;glmesh.lib;nvToolsExt32_1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glload.lib;cudart.lib;SOIL.lib;cuda.lib;glutil.lib;glmesh.lib;nvToolsExt64_1.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CudaCompile Include="VR_Physic_FEM_Simulation.cu" />
+    <None Include="..\Debug\Configure\configure.ini" />
+    <None Include="..\Debug\MyShader\basic.vert" />
+    <None Include="..\Release\Configure\configure.ini" />
+    <None Include="..\x64\Release\Configure\configure.ini" />
+    <None Include="ReadMe.txt" />
+    <CudaCompile Include="VR_CUDA_GlobalDefine.cuh">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ingredients\cookbookogl.h" />
+    <ClInclude Include="..\ingredients\defines.h" />
+    <ClInclude Include="..\ingredients\drawable.h" />
+    <ClInclude Include="..\ingredients\glslprogram.h" />
+    <ClInclude Include="..\ingredients\glutils.h" />
+    <ClInclude Include="..\ingredients\scene.h" />
+    <ClInclude Include="..\ingredients\teapotdata.h" />
+    <ClInclude Include="..\ingredients\vbocube.h" />
+    <ClInclude Include="..\ingredients\vbomesh.h" />
+    <ClInclude Include="..\ingredients\vbomeshadj.h" />
+    <ClInclude Include="..\ingredients\vboplane.h" />
+    <ClInclude Include="..\ingredients\vboteapot.h" />
+    <ClInclude Include="..\ingredients\vboteapotpatch.h" />
+    <ClInclude Include="..\ingredients\vbotorus.h" />
+    <ClInclude Include="BladeTraceData\BladeTraceDefines.h" />
+    <ClInclude Include="CDT\common\shapes.h" />
+    <ClInclude Include="CDT\common\utils.h" />
+    <ClInclude Include="CDT\constrainedDelaunayTriangulation.h" />
+    <ClInclude Include="CDT\poly2tri.h" />
+    <ClInclude Include="CDT\sweep\advancing_front.h" />
+    <ClInclude Include="CDT\sweep\cdt.h" />
+    <ClInclude Include="CDT\sweep\sweep.h" />
+    <ClInclude Include="CDT\sweep\sweep_context.h" />
+    <ClInclude Include="CG\preconditionrelaxation.h" />
+    <ClInclude Include="CG\preconditionssor.h" />
+    <ClInclude Include="CG\solver.h" />
+    <ClInclude Include="CG\solvercg.h" />
+    <ClInclude Include="CG\solvercontrol.h" />
+    <ClInclude Include="Configure\ini.h" />
+    <ClInclude Include="Configure\INIReader.h" />
+    <ClInclude Include="constant_numbers.h" />
+    <ClInclude Include="frustum.h" />
+    <ClInclude Include="MyFunctionCall.h" />
+    <ClInclude Include="MyGLM.h" />
+    <ClInclude Include="MyScene.h" />
+    <ClInclude Include="MySceneBase.h" />
+    <ClInclude Include="MyScene_StableFunction.h" />
+    <ClInclude Include="MyVBOLineSet.h" />
+    <ClInclude Include="MyVBOMesh.h" />
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="Rotation\ArcBall.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TexRender.h" />
+    <ClInclude Include="VR_Color.h" />
+    <ClInclude Include="VR_Geometry.h" />
+    <ClInclude Include="VR_Geometry_MeshDataStruct.h" />
+    <ClInclude Include="VR_Geometry_TriangleMeshStruct.h" />
+    <ClInclude Include="VR_GlobalVariable.h" />
+    <ClInclude Include="VR_Global_Define.h" />
+    <ClInclude Include="VR_GLSL_Font.h" />
+    <ClInclude Include="VR_GPU_Geometry_Octree.h" />
+    <ClInclude Include="VR_GPU_Geometry_OctreeLevelInfo.h" />
+    <ClInclude Include="VR_GPU_Physic_StructInfo.h" />
+    <ClInclude Include="VR_GPU_Utils.h" />
+    <ClInclude Include="VR_MACRO.h" />
+    <ClInclude Include="VR_Material.h" />
+    <ClInclude Include="VR_Numerical_NewmarkContant.h" />
+    <ClInclude Include="VR_Physic_Cell.h" />
+    <ClInclude Include="VR_Physic_CuttingCheckStructOnCuda.h" />
+    <ClInclude Include="VR_Physic_FEM_Simulation.h" />
+    <ClInclude Include="VR_Physic_StructOnCUDA.h" />
+    <ClInclude Include="VR_Physic_StructOnCUDA_CPU.h" />
+    <ClInclude Include="VR_Physic_Vertex.h" />
+    <ClInclude Include="VR_Render_ConsoleProgressPrint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ingredients\drawable.cpp" />
+    <ClCompile Include="..\ingredients\glslprogram.cpp" />
+    <ClCompile Include="..\ingredients\glutils.cpp" />
+    <ClCompile Include="..\ingredients\vbocube.cpp" />
+    <ClCompile Include="..\ingredients\vbomesh.cpp" />
+    <ClCompile Include="..\ingredients\vbomeshadj.cpp" />
+    <ClCompile Include="..\ingredients\vboplane.cpp" />
+    <ClCompile Include="..\ingredients\vboteapot.cpp" />
+    <ClCompile Include="..\ingredients\vboteapotpatch.cpp" />
+    <ClCompile Include="..\ingredients\vbotorus.cpp" />
+    <ClCompile Include="BladeTraceData\ArmadilloMiddleBlade.cpp" />
+    <ClCompile Include="CDT\common\shapes.cc" />
+    <ClCompile Include="CDT\constrainedDelaunayTriangulation.cpp" />
+    <ClCompile Include="CDT\sweep\advancing_front.cc" />
+    <ClCompile Include="CDT\sweep\cdt.cc" />
+    <ClCompile Include="CDT\sweep\sweep.cc" />
+    <ClCompile Include="CDT\sweep\sweep_context.cc" />
+    <ClCompile Include="CG\preconditionrelaxation.cpp" />
+    <ClCompile Include="CG\preconditionssor.cpp" />
+    <ClCompile Include="CG\solver.cpp" />
+    <ClCompile Include="CG\solvercg.cpp" />
+    <ClCompile Include="CG\solvercontrol.cpp" />
+    <ClCompile Include="Configure\ini.cpp" />
+    <ClCompile Include="Configure\INIReader.cpp" />
+    <ClCompile Include="constant_numbers.cpp" />
+    <ClCompile Include="frustum.cpp" />
+    <ClCompile Include="glutFunction.cpp" />
+    <ClCompile Include="MyScene.cpp" />
+    <ClCompile Include="MySceneBase.cpp" />
+    <ClCompile Include="MyVBOLineSet.cpp" />
+    <ClCompile Include="MyVBOMesh.cpp" />
+    <ClCompile Include="OctreeGrid\obj_beam_zup_unify_grid.cpp" />
+    <ClCompile Include="OctreeGrid\obj_grid_armadillo_unify_grid_level6.cpp" />
+    <ClCompile Include="OctreeGrid\obj_grid_armadillo_unify_grid_level6_classic.cpp" />
+    <ClCompile Include="OctreeGrid\obj_grid_bunny_unify_grid_level5.cpp" />
+    <ClCompile Include="OctreeGrid\obj_grid_bunny_unify_grid_level6.cpp" />
+    <ClCompile Include="OctreeGrid\obj_grid_sphere_unify_grid_level6.cpp" />
+    <ClCompile Include="OctreeGrid\obj_grid_steak_unify_grid_level6.cpp" />
+    <ClCompile Include="Polynomial.cpp" />
+    <ClCompile Include="Rotation\ArcBall.cpp" />
+    <ClCompile Include="ShaderCookBook_VS.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TexRender.cpp" />
+    <ClCompile Include="VR_Color.cpp" />
+    <ClCompile Include="VR_Geometry.cpp" />
+    <ClCompile Include="VR_Geometry_MeshDataStruct.cpp" />
+    <ClCompile Include="VR_GlobalVariable.cpp" />
+    <ClCompile Include="VR_GLSL_Font.cpp" />
+    <ClCompile Include="VR_GPU_Geometry_Octree.cpp" />
+    <ClCompile Include="VR_GPU_Utils.cpp" />
+    <ClCompile Include="VR_Numerical_NewmarkContant.cpp" />
+    <ClCompile Include="VR_Physic_Cell.cpp" />
+    <ClCompile Include="VR_Physic_FEM_Simulation.cpp" />
+    <ClCompile Include="VR_Physic_Vertex.cpp" />
+    <ClCompile Include="VR_Render_ConsoleProgressPrint.cpp" />
+    <ClCompile Include="YC_NewFeatureTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="VR_GPU_Geometry_Octree.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 6.5.targets" />
+  </ImportGroup>
+</Project>

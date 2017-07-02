@@ -1,0 +1,117 @@
+文件夹 PATH 列表
+卷序列号为 0006-D916
+D:.
+│  tree.txt
+│  VR_FEM.sln
+│  
+├─Debug
+│  │  freeglut.dll
+│  │  glew32.dll
+│  │  
+│  ├─Configure
+│  │      configure.ini
+│  │      
+│  └─MyShader
+│          pcf.fs
+│          pcf.vs
+│          
+├─Release
+│  │  freeglut.dll
+│  │  
+│  ├─Configure
+│  │      configure - level4.ini
+│  │      configure.ini
+│  │      configure_level6.ini
+│  │      
+│  └─MyShader
+│          pcf.fs
+│          pcf.vs
+│          
+└─VR_FEM
+    │  constant_numbers.cpp
+    │  constant_numbers.h
+    │  frustum.cpp
+    │  frustum.h
+    │  glutFunction.cpp
+    │  HexGrid.cpp
+    │  MyScene.cpp
+    │  MyScene.h
+    │  MySceneBase.cpp
+    │  MySceneBase.h
+    │  MyScene_StableFunction.h
+    │  MyVBOLineSet.cpp
+    │  MyVBOLineSet.h
+    │  MyVBOMesh.cpp
+    │  MyVBOMesh.h
+    │  obj_grid_armadillo_unify_grid_level6_classic.cpp
+    │  Polynomial.cpp
+    │  Polynomial.h
+    │  stdafx.cpp
+    │  stdafx.h
+    │  targetver.h
+    │  TexRender.cpp
+    │  TexRender.h
+    │  VR_FEM.vcxproj
+    │  VR_FEM.vcxproj.filters
+    │  VR_FEM.vcxproj.user
+    │  VR_Geometry.h
+    │  VR_Geometry_MeshDataStruct.cpp
+    │  VR_Geometry_MeshDataStruct.h
+    │  VR_Geometry_TriangleMeshStruct.h
+    │  VR_GlobalVariable.cpp
+    │  VR_GlobalVariable.h
+    │  VR_Global_Define.h
+    │  VR_GLSL_Font.cpp
+    │  VR_GLSL_Font.h
+    │  VR_GPU_Physic_StructInfo.h
+    │  VR_MACRO.h
+    │  VR_main.cpp
+    │  VR_Material.h
+    │  VR_Numerical_NewmarkContant.cpp
+    │  VR_Numerical_NewmarkContant.h
+    │  VR_Physic_Cell.cpp
+    │  VR_Physic_Cell.h
+    │  VR_Physic_FEM_Simulation.cpp
+    │  VR_Physic_FEM_Simulation.h
+    │  VR_Physic_Vertex.cpp
+    │  VR_Physic_Vertex.h
+    │  
+    ├─CG
+    │      preconditionrelaxation.cpp
+    │      preconditionrelaxation.h
+    │      preconditionssor.cpp
+    │      preconditionssor.h
+    │      solver.cpp
+    │      solver.h
+    │      solvercg.cpp
+    │      solvercg.h
+    │      solvercontrol.cpp
+    │      solvercontrol.h
+    │      
+    ├─Configure
+    │      ini.cpp
+    │      ini.h
+    │      INIReader.cpp
+    │      INIReader.h
+    │      
+    ├─Debug
+    ├─ingredients
+    │      cookbookogl.h
+    │      defines.h
+    │      drawable.cpp
+    │      drawable.h
+    │      glslprogram.cpp
+    │      glslprogram.h
+    │      glutils.cpp
+    │      glutils.h
+    │      scene.h
+    │      vbomesh.cpp
+    │      vbomesh.h
+    │      vboplane.cpp
+    │      vboplane.h
+    │      
+    ├─Release
+    └─Rotation
+            ArcBall.cpp
+            ArcBall.h
+            

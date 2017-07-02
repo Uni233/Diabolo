@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{9fab5dbe-19a3-4f31-bb67-7255761c3c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{729eead0-045d-4683-8e2c-0c20dfcaf120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rotation">
+      <UniqueIdentifier>{5817766d-a40b-46d7-b29f-50dcdd4f9561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU_Utils">
+      <UniqueIdentifier>{5629a1c0-bf69-4a7e-9d1f-0740435c22b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions">
+      <UniqueIdentifier>{b38daf45-6506-44d8-896f-f00d4cf0809d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions\Configure">
+      <UniqueIdentifier>{72a2c86c-8327-456b-ab2a-491e122e9333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions\Geometry">
+      <UniqueIdentifier>{7e5265d1-762b-4004-b1f0-0fbc4303963e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions\cuPrintf">
+      <UniqueIdentifier>{c1e687e4-6555-4992-bcc1-304be3f6dcbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{b1221fd6-6eb9-434b-a3fd-9ba28fe2d511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigureFile">
+      <UniqueIdentifier>{30bde3eb-70ff-4f3f-ac41-409ea7eca6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigureFile\Debug">
+      <UniqueIdentifier>{d520a082-5fb3-4814-9473-d1bfa7c955ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigureFile\Release">
+      <UniqueIdentifier>{5d494687-ce26-4578-9a28-f47952c668ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OctreeGrid">
+      <UniqueIdentifier>{caa86ce8-eb27-445b-9535-700f0f61addf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions\Physic">
+      <UniqueIdentifier>{6a2ec2e7-2950-4a44-9407-a876335aa5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions\Numerical">
+      <UniqueIdentifier>{464ed42b-9ea2-45ee-9f52-166f3c685381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonFunctions\CDT">
+      <UniqueIdentifier>{3dbbe7b0-7db0-41e9-9037-b550a4a4362f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigureFile\Release\x86">
+      <UniqueIdentifier>{d44cb5c1-80d9-4911-9d44-ec45aa323583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigureFile\Release\x64">
+      <UniqueIdentifier>{be99166b-9383-45e9-a217-6e27df407c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BladeTraceData">
+      <UniqueIdentifier>{ef9dbcfb-1ccd-463e-bd26-e9471ed984b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\Debug\MyShader\basic.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\Debug\Configure\configure.ini">
+      <Filter>ConfigureFile\Debug</Filter>
+    </None>
+    <None Include="..\x64\Release\Configure\configure.ini">
+      <Filter>ConfigureFile\Release\x64</Filter>
+    </None>
+    <None Include="..\Release\Configure\configure.ini">
+      <Filter>ConfigureFile\Release\x86</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Global_Define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\cookbookogl.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\defines.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\drawable.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\glslprogram.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\glutils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\scene.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\teapotdata.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vbocube.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vbomesh.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vbomeshadj.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vboplane.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vboteapot.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vboteapotpatch.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ingredients\vbotorus.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySceneBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Rotation\ArcBall.h">
+      <Filter>Rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="frustum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScene_StableFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_MACRO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Material.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GPU_Utils.h">
+      <Filter>GPU_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure\INIReader.h">
+      <Filter>CommonFunctions\Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure\ini.h">
+      <Filter>CommonFunctions\Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GlobalVariable.h">
+      <Filter>CommonFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Geometry_MeshDataStruct.h">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GPU_Geometry_Octree.h">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GPU_Geometry_OctreeLevelInfo.h">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVBOMesh.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="TexRender.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GLSL_Font.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVBOLineSet.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Color.h">
+      <Filter>CommonFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Geometry.h">
+      <Filter>CommonFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_FEM_Simulation.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_Cell.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="constant_numbers.h">
+      <Filter>CommonFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_Vertex.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="Polynomial.h">
+      <Filter>CommonFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_StructOnCUDA.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Numerical_NewmarkContant.h">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Geometry_TriangleMeshStruct.h">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\preconditionrelaxation.h">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\preconditionssor.h">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solver.h">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solvercg.h">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solvercontrol.h">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Render_ConsoleProgressPrint.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GPU_Physic_StructInfo.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_StructOnCUDA_CPU.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\poly2tri.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\sweep\advancing_front.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\sweep\cdt.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\sweep\sweep.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\sweep\sweep_context.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\common\shapes.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\common\utils.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="CDT\constrainedDelaunayTriangulation.h">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClInclude>
+    <ClInclude Include="BladeTraceData\BladeTraceDefines.h">
+      <Filter>BladeTraceData</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGLM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_CuttingCheckStructOnCuda.h">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFunctionCall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCookBook_VS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glutFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\drawable.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\glslprogram.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\glutils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vbocube.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vbomesh.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vbomeshadj.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vboplane.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vboteapot.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vboteapotpatch.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ingredients\vbotorus.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MyScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySceneBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotation\ArcBall.cpp">
+      <Filter>Rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="frustum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_GPU_Utils.cpp">
+      <Filter>GPU_Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="YC_NewFeatureTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure\ini.cpp">
+      <Filter>CommonFunctions\Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure\INIReader.cpp">
+      <Filter>CommonFunctions\Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_GlobalVariable.cpp">
+      <Filter>CommonFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Geometry_MeshDataStruct.cpp">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_GPU_Geometry_Octree.cpp">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_GLSL_Font.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="TexRender.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="MyVBOMesh.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="MyVBOLineSet.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_grid_sphere_unify_grid_level6.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_grid_bunny_unify_grid_level6.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_grid_armadillo_unify_grid_level6.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_grid_steak_unify_grid_level6.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physic_FEM_Simulation.cpp">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="constant_numbers.cpp">
+      <Filter>CommonFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Polynomial.cpp">
+      <Filter>CommonFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physic_Cell.cpp">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Geometry.cpp">
+      <Filter>CommonFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physic_Vertex.cpp">
+      <Filter>CommonFunctions\Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Numerical_NewmarkContant.cpp">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\preconditionrelaxation.cpp">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\preconditionssor.cpp">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solver.cpp">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solvercg.cpp">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solvercontrol.cpp">
+      <Filter>CommonFunctions\Numerical</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Render_ConsoleProgressPrint.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_grid_armadillo_unify_grid_level6_classic.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_grid_bunny_unify_grid_level5.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+    <ClCompile Include="CDT\sweep\advancing_front.cc">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClCompile>
+    <ClCompile Include="CDT\sweep\cdt.cc">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClCompile>
+    <ClCompile Include="CDT\sweep\sweep.cc">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClCompile>
+    <ClCompile Include="CDT\sweep\sweep_context.cc">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClCompile>
+    <ClCompile Include="CDT\common\shapes.cc">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClCompile>
+    <ClCompile Include="CDT\constrainedDelaunayTriangulation.cpp">
+      <Filter>CommonFunctions\CDT</Filter>
+    </ClCompile>
+    <ClCompile Include="BladeTraceData\ArmadilloMiddleBlade.cpp">
+      <Filter>BladeTraceData</Filter>
+    </ClCompile>
+    <ClCompile Include="OctreeGrid\obj_beam_zup_unify_grid.cpp">
+      <Filter>OctreeGrid</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="VR_GPU_Geometry_Octree.cu">
+      <Filter>CommonFunctions\Geometry</Filter>
+    </CudaCompile>
+    <CudaCompile Include="VR_CUDA_GlobalDefine.cuh">
+      <Filter>CommonFunctions</Filter>
+    </CudaCompile>
+    <CudaCompile Include="VR_Physic_FEM_Simulation.cu">
+      <Filter>CommonFunctions\Physic</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

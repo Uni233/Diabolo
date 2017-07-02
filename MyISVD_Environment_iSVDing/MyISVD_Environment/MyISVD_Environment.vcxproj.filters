@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="tbb">
+      <UniqueIdentifier>{95db547f-5a49-4e62-a35d-66f8ae889232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frame">
+      <UniqueIdentifier>{d9de4ba9-860b-49bc-95df-d06c0a4aac9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CG">
+      <UniqueIdentifier>{50881ad5-1e36-4aa8-a5dd-82e5ec29106b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configure">
+      <UniqueIdentifier>{687e19a7-fb26-4d02-bf6c-fdd3d516fd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PPCG">
+      <UniqueIdentifier>{3ee1193d-1eea-42c7-908c-e54cab28017e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iSVD">
+      <UniqueIdentifier>{87a0ff0c-4f57-4f86-9898-6b9a53c17f9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Global_Define.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LookUp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Numerical_NewmarkContant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physics_FEM_Simulation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame\Axis_YC.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame\Quater_YC.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="constant_numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialMatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Polynomial.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\preconditionrelaxation.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\preconditionssor.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solver.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solvercg.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solvercontrol.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure\ini.cpp">
+      <Filter>Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure\INIReader.cpp">
+      <Filter>Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physics_FEM_Simulation_MultiDomain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PCG_with_residual_update.cpp">
+      <Filter>PPCG</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussElimination.cpp">
+      <Filter>PPCG</Filter>
+    </ClCompile>
+    <ClCompile Include="QuaternionTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyISVD.cpp">
+      <Filter>iSVD</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyMacro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Global_Define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IGL_Mesh_Struct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tbb_parallel_set_color.h">
+      <Filter>tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Numerical_NewmarkContant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physics_FEM_Simulation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Axis_YC.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Mat_YC.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Quater_YC.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame\Vec_YC.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="constant_numbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialMatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Polynomial.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\preconditionrelaxation.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\preconditionssor.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solver.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solvercg.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solvercontrol.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure\ini.h">
+      <Filter>Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure\INIReader.h">
+      <Filter>Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="tbb_parallel_set_skin_displacement.h">
+      <Filter>tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="Physic_State.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physics_FEM_Simulation_MultiDomain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PCG_with_residual_update.h">
+      <Filter>PPCG</Filter>
+    </ClInclude>
+    <ClInclude Include="PCG_with_residual_update_Monitor.h">
+      <Filter>PPCG</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussElimination.h">
+      <Filter>PPCG</Filter>
+    </ClInclude>
+    <ClInclude Include="MyIterMacro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuaternionTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyISVD.h">
+      <Filter>iSVD</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

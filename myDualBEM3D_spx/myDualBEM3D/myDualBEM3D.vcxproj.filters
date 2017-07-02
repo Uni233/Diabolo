@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="vrPhysics">
+      <UniqueIdentifier>{e7bd1faa-2cff-4fdf-a5fd-d344baa279ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vrGeometry">
+      <UniqueIdentifier>{c12d3096-befe-4dda-a31a-a2ac23ae2b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vrBase">
+      <UniqueIdentifier>{13d9e319-8756-4064-b9ea-068966b3d553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vrBase\log">
+      <UniqueIdentifier>{2a9fec71-49b1-47e5-b096-abc13e3b9f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="conf">
+      <UniqueIdentifier>{d7b0ecf5-9aa4-4ecc-853b-05294a18c54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vrTimer">
+      <UniqueIdentifier>{356d50bc-f7a6-4507-896e-9e99775d28b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bemDefines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bemMarco.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="constant_numbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vrGlobalConf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\BEMMaterials.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\bemTriangleElem.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\bemVertex.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\quad_rule.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\TriangleBasisFuncs.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\vrBEM3D.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrGeometry\VR_Geometry_MeshDataStruct.h">
+      <Filter>vrGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrBase.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrConfigureParser.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrCoordinate.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrFileSystem.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrIterator.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrLog.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrMacro.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrPrintf.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrRotation.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrString.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\vrTypes.h">
+      <Filter>vrBase</Filter>
+    </ClInclude>
+    <ClInclude Include="vrBase\log\easylogging++.h">
+      <Filter>vrBase\log</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\lgwt.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="vrPhysics\bemMatlabFunc.h">
+      <Filter>vrPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VDBWrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="distPtToTri.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mySegment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vcgHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tbb_parallel_assemble_source_point.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vrId.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vrColor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vec3LessCompare.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="discontinuousColletionPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vrTimer\TimingCPU.h">
+      <Filter>vrTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="vrTimer\TimingGPU.cuh">
+      <Filter>vrTimer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="constant_numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LookUp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stableFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vrGlobalConf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vrPhysics\bemTriangleElem.cpp">
+      <Filter>vrPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="vrPhysics\bemVertex.cpp">
+      <Filter>vrPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="vrPhysics\vrBEM3D.cpp">
+      <Filter>vrPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="vrGeometry\VR_Geometry_MeshDataStruct.cpp">
+      <Filter>vrGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrConfigureParser.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrCoordinate.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrFileSystem.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrIterator.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrRotation.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrString.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrTypes.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrBase\vrPrintf.cpp">
+      <Filter>vrBase</Filter>
+    </ClCompile>
+    <ClCompile Include="vrPhysics\quad_rule.cpp">
+      <Filter>vrPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="vrPhysics\lgwt.cpp">
+      <Filter>vrPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="vrPhysics\bemMatlabFunc.cpp">
+      <Filter>vrPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VDBWrapper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VDBWrapper_mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vrColor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vrTimer\TimingCPU.cpp">
+      <Filter>vrTimer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="conf\log.conf">
+      <Filter>conf</Filter>
+    </None>
+    <None Include="conf\param.conf">
+      <Filter>conf</Filter>
+    </None>
+    <None Include="conf\plotCartoon.conf">
+      <Filter>conf</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="vrTimer\TimingGPU.cu">
+      <Filter>vrTimer</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

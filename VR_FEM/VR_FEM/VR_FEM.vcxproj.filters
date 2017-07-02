@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CG">
+      <UniqueIdentifier>{dfcc60f9-192e-4196-bb6e-8d3343a7205d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rotation">
+      <UniqueIdentifier>{89a6cf85-3aa7-49bd-b3d2-eca8670b60b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configure">
+      <UniqueIdentifier>{003c3f05-18b3-4bda-9467-53741e0a4935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ingredients">
+      <UniqueIdentifier>{e175050f-cfdb-4915-8d5f-13fc6ddbe2b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constant_numbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="frustum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyScene_StableFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySceneBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVBOLineSet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyVBOMesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Polynomial.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TexRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Geometry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Geometry_MeshDataStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Geometry_TriangleMeshStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Global_Define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GlobalVariable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GLSL_Font.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_GPU_Physic_StructInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_MACRO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Material.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Numerical_NewmarkContant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_Cell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_FEM_Simulation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VR_Physic_Vertex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\preconditionrelaxation.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\preconditionssor.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solver.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solvercg.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="CG\solvercontrol.h">
+      <Filter>CG</Filter>
+    </ClInclude>
+    <ClInclude Include="Rotation\ArcBall.h">
+      <Filter>Rotation</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure\ini.h">
+      <Filter>Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="Configure\INIReader.h">
+      <Filter>Configure</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\cookbookogl.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\defines.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\drawable.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\glslprogram.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\glutils.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\scene.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\vbomesh.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredients\vboplane.h">
+      <Filter>ingredients</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="constant_numbers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="frustum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glutFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HexGrid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySceneBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyVBOLineSet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyVBOMesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="obj_grid_armadillo_unify_grid_level6_classic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Polynomial.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TexRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Geometry_MeshDataStruct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_GlobalVariable.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_GLSL_Font.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Numerical_NewmarkContant.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physic_Cell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physic_FEM_Simulation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VR_Physic_Vertex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\preconditionrelaxation.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\preconditionssor.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solver.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solvercg.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="CG\solvercontrol.cpp">
+      <Filter>CG</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotation\ArcBall.cpp">
+      <Filter>Rotation</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure\ini.cpp">
+      <Filter>Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="Configure\INIReader.cpp">
+      <Filter>Configure</Filter>
+    </ClCompile>
+    <ClCompile Include="ingredients\drawable.cpp">
+      <Filter>ingredients</Filter>
+    </ClCompile>
+    <ClCompile Include="ingredients\glslprogram.cpp">
+      <Filter>ingredients</Filter>
+    </ClCompile>
+    <ClCompile Include="ingredients\glutils.cpp">
+      <Filter>ingredients</Filter>
+    </ClCompile>
+    <ClCompile Include="ingredients\vbomesh.cpp">
+      <Filter>ingredients</Filter>
+    </ClCompile>
+    <ClCompile Include="ingredients\vboplane.cpp">
+      <Filter>ingredients</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

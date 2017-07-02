@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7FC06DA-7E9D-4590-AAB4-C613B6C47C12}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyISVD_Environment</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\MyWorkspace\SDKx64\libigl\include;D:\MyWorkspace\SDKx64\glew-1.10.0\include;D:\MyWorkspace\SDKx64\glfw-3.1.1\include;D:\MyWorkspace\SDKx64\eigen-3.2.6;D:\MyWorkspace\SDKx64\libigl\external\nanogui\include;D:\MyWorkspace\SDKx64\libigl\external\nanovg\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx64\libigl\external\nanogui\lib_x64_2013;D:\MyWorkspace\SDKx64\glfw-3.1.1\lib_x64_2013;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\MyWorkspace\SDKx64\libigl\include;D:\MyWorkspace\SDKx64\glew-1.10.0\include;D:\MyWorkspace\SDKx64\glfw-3.1.1\include;D:\MyWorkspace\SDKx64\eigen-3.2.6;D:\MyWorkspace\SDKx64\libigl\external\nanogui\include;D:\MyWorkspace\SDKx64\libigl\external\nanovg\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx64\libigl\external\nanogui\lib_x64_2013;D:\MyWorkspace\SDKx64\glfw-3.1.1\lib_x64_2013;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\MyWorkspace\SDKx64\libigl\external\nanovg\src;D:\MyWorkspace\SDKx64\glew-1.10.0\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;D:\MyWorkspace\SDKx64\TBB44\include;D:\MyWorkspace\SDKx64\glsdk_0_5_2\boost;D:\MyWorkspace\SDKx64\libigl\include;D:\MyWorkspace\SDKx64\glew-1.13.0\include;D:\MyWorkspace\SDKx64\glfw-3.1.1\include;D:\MyWorkspace\SDKx64\eigen-3.2.6;D:\MyWorkspace\SDKx64\libigl\external\nanogui\include;D:\MyWorkspace\SDKx64\nanovg-master\src;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx64\glfw-3.1.1\lib_x64_2013;D:\MyWorkspace\SDKx64\libigl\external\nanogui\lib_x64_2013;D:\MyWorkspace\SDKx64\glew-1.10.0\lib_x64_2013;D:\MyWorkspace\SDKx64\TBB44\lib\intel64\vc12;D:\MyWorkspace\SDKx64\libigl\external\nanogui\lib_x64;D:\MyWorkspace\SDKx64\glfw-3.1.1\lib_x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>nanogui.lib;glfw3.lib;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/x64/OpenGL32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>nanogui.lib;glfw3.lib;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Lib/x64/OpenGL32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>nanogui.lib;glfw3.lib;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.1A/Lib/x64/OpenGL32.Lib;C:/Program Files (x86)/Microsoft SDKs/Windows/v7.1A/Lib/x64/GlU32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="CG\preconditionrelaxation.cpp" />
+    <ClCompile Include="CG\preconditionssor.cpp" />
+    <ClCompile Include="CG\solver.cpp" />
+    <ClCompile Include="CG\solvercg.cpp" />
+    <ClCompile Include="CG\solvercontrol.cpp" />
+    <ClCompile Include="Configure\ini.cpp" />
+    <ClCompile Include="Configure\INIReader.cpp" />
+    <ClCompile Include="constant_numbers.cpp" />
+    <ClCompile Include="Frame\Axis_YC.cpp" />
+    <ClCompile Include="Frame\Quater_YC.cpp" />
+    <ClCompile Include="GaussElimination.cpp" />
+    <ClCompile Include="LookUp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaterialMatrix.cpp" />
+    <ClCompile Include="PCG_with_residual_update.cpp" />
+    <ClCompile Include="Physic_State_DomainDependent.cpp" />
+    <ClCompile Include="Polynomial.cpp" />
+    <ClCompile Include="QuaternionTools.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="VR_Global_Define.cpp" />
+    <ClCompile Include="VR_Numerical_NewmarkContant.cpp" />
+    <ClCompile Include="VR_Physics_FEM_Simulation.cpp" />
+    <ClCompile Include="VR_Physics_FEM_Simulation_MultiDomainIndependent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="CG\preconditionrelaxation.h" />
+    <ClInclude Include="CG\preconditionssor.h" />
+    <ClInclude Include="CG\solver.h" />
+    <ClInclude Include="CG\solvercg.h" />
+    <ClInclude Include="CG\solvercontrol.h" />
+    <ClInclude Include="Configure\ini.h" />
+    <ClInclude Include="Configure\INIReader.h" />
+    <ClInclude Include="constant_numbers.h" />
+    <ClInclude Include="Frame\Axis_YC.h" />
+    <ClInclude Include="Frame\Mat_YC.h" />
+    <ClInclude Include="Frame\Quater_YC.h" />
+    <ClInclude Include="Frame\Vec_YC.h" />
+    <ClInclude Include="GaussElimination.h" />
+    <ClInclude Include="IGL_Mesh_Struct.h" />
+    <ClInclude Include="MaterialMatrix.h" />
+    <ClInclude Include="MyIterMacro.h" />
+    <ClInclude Include="MyMacro.h" />
+    <ClInclude Include="PCG_with_residual_update.h" />
+    <ClInclude Include="PCG_with_residual_update_Monitor.h" />
+    <ClInclude Include="Physic_State_DomainDependent.h" />
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="QuaternionTools.h" />
+    <ClInclude Include="tbb_parallel_set_color.h" />
+    <ClInclude Include="tbb_parallel_set_skin_displacement.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VR_Global_Define.h" />
+    <ClInclude Include="VR_Numerical_NewmarkContant.h" />
+    <ClInclude Include="VR_Physics_FEM_Simulation.h" />
+    <ClInclude Include="VR_Physics_FEM_Simulation_MultiDomainIndependent.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

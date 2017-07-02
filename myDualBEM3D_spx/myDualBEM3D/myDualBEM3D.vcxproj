@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30689D7A-5473-41DC-8149-FF2D1581ECE0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>myDualBEM3D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>D:\myDualBEM3D\$(Configuration)\</OutDir>
+    <IntDir>D:\myDualBEM3D\$(Configuration)\</IntDir>
+    <IncludePath>D:\MyWorkspace\SDKx86\freeglut-2.8.1\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\glew-1.10.0\include;D:\MyWorkspace\SDKx86\eigen-3.2.5;D:\MyWorkspace\SDKx86\boost_1_54_0;$(ProjectDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx86\boost_1_54_0\lib32-msvc-10.0;D:\MyWorkspace\SDKx86\freeglut-2.8.1\lib\x86;D:\MyWorkspace\SDKx86\glew-1.10.0\lib\Release\Win32;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>D:\myDualBEM3D\$(Configuration)\</OutDir>
+    <IntDir>D:\myDualBEM3D\$(Configuration)\</IntDir>
+    <IncludePath>D:\MyWorkspace\SDKx86\freeglut-2.8.1\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\glew-1.10.0\include;D:\MyWorkspace\SDKx86\eigen-3.2.5;D:\MyWorkspace\SDKx86\boost_1_54_0;$(ProjectDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx86\boost_1_54_0\lib32-msvc-10.0;D:\MyWorkspace\SDKx86\freeglut-2.8.1\lib\x86;D:\MyWorkspace\SDKx86\glew-1.10.0\lib\Release\Win32;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>d:\myDualBEM3D\Release_SST_Debug</OutDir>
+    <IntDir>d:\myDualBEM3D\Release_SST_Debug\complier_out</IntDir>
+    <IncludePath>C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\inc;D:\MyWorkspace\SDKx64\TBB44\include;D:\MyWorkspace\SDKx86\openexr;D:\MyWorkspace\SDKx64\openvdb-2.2.0\openvdb_v2_2_0\openvdb;D:\MyWorkspace\SDKx86\glew-1.13.0\include;D:\MyWorkspace\SDKx64\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\boost_1_54_0_vs2010_x86;D:\MyWorkspace\SDKx86\eigen-3.2.6;D:\MyWorkspace\SDKx86\freeglut-2.8.1\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\glew-1.10.0\include;D:\MyWorkspace\SDKx86\eigen-3.2.5;D:\MyWorkspace\SDKx86\boost_1_54_0;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkspace\MyPaper\4.Cuiliu\toCuiliu\TBB44\lib\ia32\vc10;D:\MyWorkspace\SDKx86\glew-1.13.0\lib\Release\Win32;D:\MyWorkspace\SDKx86\boost_1_54_0_vs2010_x86\lib32-msvc-10.0;D:\MyWorkspace\SDKx86\boost_1_54_0\lib32-msvc-10.0;D:\MyWorkspace\SDKx86\freeglut-2.8.1\lib\x86;D:\MyWorkspace\SDKx86\glew-1.10.0\lib\Release\Win32;D:\MyWorkspace\SDKx64\TBB44\lib\ia32\vc10;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>D:\MyWorkspace\1.MyCode\3.MyGit\MyBEM_Tutorials\Dual_Debug\CrackExperiment\Release_SST_Debug_x64_Crack</OutDir>
+    <IntDir>D:\MyWorkspace\1.MyCode\3.MyGit\MyBEM_Tutorials\Dual_Debug\CrackExperiment\Release_SST_Debug_x64_Crack\complieOut</IntDir>
+    <IncludePath>C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\inc;D:\MyWorkspace\SDKx64\TBB44\include;D:\MyWorkspace\SDKx86\openexr;D:\MyWorkspace\SDKx64\openvdb-2.2.0\openvdb_v2_2_0\openvdb;D:\MyWorkspace\SDKx86\glew-1.13.0\include;D:\MyWorkspace\SDKx64\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\boost_1_54_0_vs2010_x86;D:\MyWorkspace\SDKx86\eigen-3.2.6;D:\MyWorkspace\SDKx86\freeglut-2.8.1\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\glew-1.10.0\include;D:\MyWorkspace\SDKx86\eigen-3.2.5;D:\MyWorkspace\SDKx86\boost_1_54_0;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx64\boost_1_54_0\lib64-msvc-10.0;D:\MyWorkspace\SDKx64\freeglut-2.8.1\lib\x64\vs2010;D:\MyWorkspace\SDKx64\glew-1.10.0\lib_x64_2010\Release\x64;D:\MyWorkspace\SDKx64\TBB44\lib\intel64\vc10;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ASSEMBLE_GALERKIN_OMP;_USE_MATH_DEFINES;OPENVDB_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;D:\MyWorkspace\SDKx86\openexr\Lib\Half.lib;D:\MyWorkspace\SDKx86\zlib-1.2.8\Build\Release\zlib.lib;cusolver.lib;cublas.lib;cusparse.lib;cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <Include>./;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\inc</Include>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ASSEMBLE_GALERKIN_OMP;_USE_MATH_DEFINES;OPENVDB_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;D:\MyWorkspace\SDKx86\openexr\Lib\Half.lib;D:\MyWorkspace\SDKx86\zlib-1.2.8\Build\Release\zlib.lib;cusolver.lib;cublas.lib;cusparse.lib;cudart_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <Include>./;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0\common\inc</Include>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="bemDefines.h" />
+    <ClInclude Include="bemMarco.h" />
+    <ClInclude Include="constant_numbers.h" />
+    <ClInclude Include="discontinuousColletionPoint.h" />
+    <ClInclude Include="distPtToTri.h" />
+    <ClInclude Include="MaterialModel.h" />
+    <ClInclude Include="mySegment.h" />
+    <ClInclude Include="PostProcessor.h" />
+    <ClInclude Include="RegionHandler.h" />
+    <ClInclude Include="tbb_parallel_assemble_source_point.h" />
+    <ClInclude Include="vcgHelper.h" />
+    <ClInclude Include="VDBWrapper.h" />
+    <ClInclude Include="vec3LessCompare.h" />
+    <ClInclude Include="vrBase\log\easylogging++.h" />
+    <ClInclude Include="vrBase\vrBase.h" />
+    <ClInclude Include="vrBase\vrConfigureParser.h" />
+    <ClInclude Include="vrBase\vrCoordinate.h" />
+    <ClInclude Include="vrBase\vrFileSystem.h" />
+    <ClInclude Include="vrBase\vrIterator.h" />
+    <ClInclude Include="vrBase\vrLog.h" />
+    <ClInclude Include="vrBase\vrMacro.h" />
+    <ClInclude Include="vrBase\vrPrintf.h" />
+    <ClInclude Include="vrBase\vrRotation.h" />
+    <ClInclude Include="vrBase\vrString.h" />
+    <ClInclude Include="vrBase\vrTypes.h" />
+    <ClInclude Include="vrColor.h" />
+    <ClInclude Include="vrGeometry\VR_Geometry_MeshDataStruct.h" />
+    <ClInclude Include="vrGlobalConf.h" />
+    <ClInclude Include="vrId.h" />
+    <ClInclude Include="vrPhysics\BEMMaterials.h" />
+    <ClInclude Include="vrPhysics\bemMatlabFunc.h" />
+    <ClInclude Include="vrPhysics\bemTriangleElem.h" />
+    <ClInclude Include="vrPhysics\bemVertex.h" />
+    <ClInclude Include="vrPhysics\lgwt.h" />
+    <ClInclude Include="vrPhysics\quad_rule.h" />
+    <ClInclude Include="vrPhysics\TriangleBasisFuncs.h" />
+    <ClInclude Include="vrPhysics\vrBEM3D.h" />
+    <ClInclude Include="vrTimer\TimingCPU.h" />
+    <ClInclude Include="vrTimer\TimingGPU.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="constant_numbers.cpp" />
+    <ClCompile Include="LookUp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaterialModel.cpp" />
+    <ClCompile Include="PostProcessor.cpp" />
+    <ClCompile Include="RegionHandler.cpp" />
+    <ClCompile Include="stableFunctions.cpp" />
+    <ClCompile Include="VDBWrapper.cpp" />
+    <ClCompile Include="VDBWrapper_mesh.cpp" />
+    <ClCompile Include="vrBase\vrConfigureParser.cpp" />
+    <ClCompile Include="vrBase\vrCoordinate.cpp" />
+    <ClCompile Include="vrBase\vrFileSystem.cpp" />
+    <ClCompile Include="vrBase\vrIterator.cpp" />
+    <ClCompile Include="vrBase\vrPrintf.cpp" />
+    <ClCompile Include="vrBase\vrRotation.cpp" />
+    <ClCompile Include="vrBase\vrString.cpp" />
+    <ClCompile Include="vrBase\vrTypes.cpp" />
+    <ClCompile Include="vrColor.cpp" />
+    <ClCompile Include="vrGeometry\VR_Geometry_MeshDataStruct.cpp" />
+    <ClCompile Include="vrGlobalConf.cpp" />
+    <ClCompile Include="vrPhysics\bemMatlabFunc.cpp" />
+    <ClCompile Include="vrPhysics\bemTriangleElem.cpp" />
+    <ClCompile Include="vrPhysics\bemVertex.cpp" />
+    <ClCompile Include="vrPhysics\lgwt.cpp" />
+    <ClCompile Include="vrPhysics\quad_rule.cpp" />
+    <ClCompile Include="vrPhysics\vrBEM3D.cpp" />
+    <ClCompile Include="vrTimer\TimingCPU.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="conf\log.conf" />
+    <None Include="conf\param.conf" />
+    <None Include="conf\plotCartoon.conf" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="vrTimer\TimingGPU.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+</Project>

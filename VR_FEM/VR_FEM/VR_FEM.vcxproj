@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B59E44F3-1C40-4138-9840-0FBE9C5A6353}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VR_FEM</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\MyWorkspace\SDKx86\freeglut-2.8.1\include;$(ProjectDir);$(ProjectDir)\ingredients;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glload\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\freeglut\include;D:\MyWorkspace\SDKx86;D:\MyWorkspace\SDKx86\SOIL;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glutil\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glmesh\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\boost;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx86\freeglut-2.8.1\lib\x86;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glload\lib;D:\MyWorkspace\SDKx86\SOIL;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glutil\lib;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glmesh\lib;$(LibraryPath);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\MyWorkspace\SDKx86\freeglut-2.8.1\include;$(ProjectDir);$(ProjectDir)\ingredients;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glm;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glload\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\freeglut\include;D:\MyWorkspace\SDKx86;D:\MyWorkspace\SDKx86\SOIL;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glutil\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glmesh\include;D:\MyWorkspace\SDKx86\glsdk_0_5_2\boost;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v6.5\common\inc;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>D:\MyWorkspace\SDKx86\freeglut-2.8.1\lib\x86;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glload\lib;D:\MyWorkspace\SDKx86\SOIL;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glutil\lib;D:\MyWorkspace\SDKx86\glsdk_0_5_2\glmesh\lib;$(LibraryPath);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glloadD.lib;SOIL.lib;glutilD.lib;glmeshD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glload.lib;SOIL.lib;glutil.lib;glmesh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CG\preconditionrelaxation.h" />
+    <ClInclude Include="CG\preconditionssor.h" />
+    <ClInclude Include="CG\solver.h" />
+    <ClInclude Include="CG\solvercg.h" />
+    <ClInclude Include="CG\solvercontrol.h" />
+    <ClInclude Include="Configure\ini.h" />
+    <ClInclude Include="Configure\INIReader.h" />
+    <ClInclude Include="constant_numbers.h" />
+    <ClInclude Include="frustum.h" />
+    <ClInclude Include="ingredients\cookbookogl.h" />
+    <ClInclude Include="ingredients\defines.h" />
+    <ClInclude Include="ingredients\drawable.h" />
+    <ClInclude Include="ingredients\glslprogram.h" />
+    <ClInclude Include="ingredients\glutils.h" />
+    <ClInclude Include="ingredients\scene.h" />
+    <ClInclude Include="ingredients\vbomesh.h" />
+    <ClInclude Include="ingredients\vboplane.h" />
+    <ClInclude Include="MyScene.h" />
+    <ClInclude Include="MySceneBase.h" />
+    <ClInclude Include="MyScene_StableFunction.h" />
+    <ClInclude Include="MyVBOLineSet.h" />
+    <ClInclude Include="MyVBOMesh.h" />
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="Rotation\ArcBall.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TexRender.h" />
+    <ClInclude Include="VR_Geometry.h" />
+    <ClInclude Include="VR_Geometry_MeshDataStruct.h" />
+    <ClInclude Include="VR_Geometry_TriangleMeshStruct.h" />
+    <ClInclude Include="VR_GlobalVariable.h" />
+    <ClInclude Include="VR_Global_Define.h" />
+    <ClInclude Include="VR_GLSL_Font.h" />
+    <ClInclude Include="VR_GPU_Physic_StructInfo.h" />
+    <ClInclude Include="VR_MACRO.h" />
+    <ClInclude Include="VR_Material.h" />
+    <ClInclude Include="VR_Numerical_NewmarkContant.h" />
+    <ClInclude Include="VR_Physic_Cell.h" />
+    <ClInclude Include="VR_Physic_FEM_Simulation.h" />
+    <ClInclude Include="VR_Physic_Vertex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CG\preconditionrelaxation.cpp" />
+    <ClCompile Include="CG\preconditionssor.cpp" />
+    <ClCompile Include="CG\solver.cpp" />
+    <ClCompile Include="CG\solvercg.cpp" />
+    <ClCompile Include="CG\solvercontrol.cpp" />
+    <ClCompile Include="Configure\ini.cpp" />
+    <ClCompile Include="Configure\INIReader.cpp" />
+    <ClCompile Include="constant_numbers.cpp" />
+    <ClCompile Include="frustum.cpp" />
+    <ClCompile Include="glutFunction.cpp" />
+    <ClCompile Include="HexGrid.cpp" />
+    <ClCompile Include="ingredients\drawable.cpp" />
+    <ClCompile Include="ingredients\glslprogram.cpp" />
+    <ClCompile Include="ingredients\glutils.cpp" />
+    <ClCompile Include="ingredients\vbomesh.cpp" />
+    <ClCompile Include="ingredients\vboplane.cpp" />
+    <ClCompile Include="MyScene.cpp" />
+    <ClCompile Include="MySceneBase.cpp" />
+    <ClCompile Include="MyVBOLineSet.cpp" />
+    <ClCompile Include="MyVBOMesh.cpp" />
+    <ClCompile Include="obj_grid_armadillo_unify_grid_level6_classic.cpp" />
+    <ClCompile Include="Polynomial.cpp" />
+    <ClCompile Include="Rotation\ArcBall.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TexRender.cpp" />
+    <ClCompile Include="VR_Geometry_MeshDataStruct.cpp" />
+    <ClCompile Include="VR_GlobalVariable.cpp" />
+    <ClCompile Include="VR_GLSL_Font.cpp" />
+    <ClCompile Include="VR_main.cpp" />
+    <ClCompile Include="VR_Numerical_NewmarkContant.cpp" />
+    <ClCompile Include="VR_Physic_Cell.cpp" />
+    <ClCompile Include="VR_Physic_FEM_Simulation.cpp" />
+    <ClCompile Include="VR_Physic_Vertex.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
